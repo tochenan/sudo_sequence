@@ -2,6 +2,8 @@
 
 Minimal web viewer for finding genomic regions with high between-sample diversity. The pipeline converts multiple aligned sequencing files into fixed-width genomic "patches" and scores each patch by the variance of read counts across samples (days). The Flask app serves the top-scoring patches and lets a simple UI list them.
 
+This project is part of the Cambridge Biohackathon and won first place.
+
 This repo currently operates on BAM alignments (via `pysam`), not raw FASTQ. If you start from FASTQ, align to a reference and produce sorted BAM files first.
 
 ## How it works
